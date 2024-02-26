@@ -185,16 +185,78 @@ const int block_table[448] =
 };
 
 
+Block Block::copy()
+{
+	b =  new Block();
+	b.m_x = x;
+	b.m_y = u;
+	return b;
+}
+
+Shape Shape::copy()
+{
+	s = new Shape();
+	s.m_x= x;
+	s.m_y = y;
+	s.m_rotation = m_rotation;
+	s.m_types = m_types;
+	
+	for(auto b : blocks)
+		s.blocks.append(b.copy());
+	return s;
+}
+
+
 #include "game.hpp"
 
 
-game::game()
+Game::Game()
 {
 	
 }
 
 
-game::~game()
+Game::~Game()
 {
-	
+	delete b;
+	delete s;
 }
+
+int Game::get_width()
+{
+	return blocks.length[0];
+}
+
+int Game::get_heigth()
+{
+	return blocks.length[1];
+}
+
+bool Game::get_paused()
+{
+	return _paused;
+}
+
+bool Game::set_paused()
+{
+	_paused = value;
+	if (has_started && !game_over)
+		setup_drop_timer();
+	pause_change();
+}
+
+int Game::get_shadow_y()
+{
+	if(shape == null)
+		return 0;
+		
+		int d = 0;
+		Game g = copy();
+		while(g.move_shape(0, 1, 0))
+			d++;
+			
+		return shape.y + d;
+}
+
+
+

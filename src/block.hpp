@@ -25,12 +25,8 @@
 #ifndef BLOCK_HPP
 #define BLOCK_HPP
 
-class Block
+struct Block
 {
-	public:
-		Block();
-		virtual ~Block();
-		
 		/* Location of block*/
 		int x, y;
 		
@@ -38,8 +34,6 @@ class Block
 		int color;
 	
 		Block copy();
-	private:
-		/* add your private declarations */
 };
 
 #endif /* BLOCK_HPP */ 

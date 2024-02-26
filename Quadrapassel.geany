@@ -20,19 +20,20 @@ indent_mode=2
 [project]
 name=Quadrapassel
 base_path=/home/suporte/projects/Quadrapassel/
+description=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
-FILE_NAME_0=989;C++;0;EUTF-8;1;1;1;%2Fhome%2Fsuporte%2Fprojects%2FQuadrapassel%2Fsrc%2Fblock.hpp;0;3
-FILE_NAME_1=937;C++;0;EUTF-8;1;1;1;%2Fhome%2Fsuporte%2Fprojects%2FQuadrapassel%2Fsrc%2Fblock.cpp;0;3
-FILE_NAME_2=945;C++;0;EUTF-8;1;1;1;%2Fhome%2Fsuporte%2Fprojects%2FQuadrapassel%2Fsrc%2Fshape.hpp;0;3
-FILE_NAME_3=1051;C++;0;EUTF-8;1;1;1;%2Fhome%2Fsuporte%2Fprojects%2FQuadrapassel%2Fsrc%2Fshape.cpp;0;3
-FILE_NAME_4=830;C++;0;EUTF-8;1;1;1;%2Fhome%2Fsuporte%2Fprojects%2FQuadrapassel%2Fsrc%2Fgame.cpp;0;3
-FILE_NAME_5=856;C++;0;EUTF-8;1;1;1;%2Fhome%2Fsuporte%2Fprojects%2FQuadrapassel%2Fsrc%2Fgame.hpp;0;3
+current_page=5
+FILE_NAME_0=956;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fblock.hpp;0;3
+FILE_NAME_1=960;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fblock.cpp;0;3
+FILE_NAME_2=864;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fshape.hpp;0;3
+FILE_NAME_3=1053;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fshape.cpp;0;3
+FILE_NAME_4=1886;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fgame.hpp;0;3
+FILE_NAME_5=3735;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fgame.cpp;0;3
 
 [VTE]
-last_dir=/opt/geany-plugins-1.38
+last_dir=/opt/git/quadrapassel

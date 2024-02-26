@@ -27,12 +27,8 @@
 
 #include "Block"
 
-class Shape
+struct Shape
 {
-	public:
-		Shape();
-		virtual ~Shape();
-	
 	/* Location of shape */
 	int x, y;
 	
@@ -44,8 +40,6 @@ class Shape
 	
 	 Shape copy():
 	
-	private:
-		/* add your private declarations */
 };
 
 #endif /* SHAPE_HPP */ 
