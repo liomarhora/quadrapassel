@@ -19,7 +19,7 @@ indent_mode=2
 
 [project]
 name=Quadrapassel
-base_path=/home/suporte/projects/Quadrapassel/
+base_path=/opt/git/Quadrapassel/
 description=
 
 [long line marker]
@@ -33,7 +33,7 @@ FILE_NAME_1=960;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fblock.cpp
 FILE_NAME_2=864;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fshape.hpp;0;3
 FILE_NAME_3=1053;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fshape.cpp;0;3
 FILE_NAME_4=1886;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fgame.hpp;0;3
-FILE_NAME_5=3735;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fgame.cpp;0;3
+FILE_NAME_5=3614;C++;0;EUTF-8;1;1;1;%2Fopt%2Fgit%2Fquadrapassel%2Fsrc%2Fgame.cpp;0;3
 
 [VTE]
 last_dir=/opt/git/quadrapassel
