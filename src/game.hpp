@@ -26,6 +26,7 @@
 #define GAME_HPP
 
 #include <vector>
+#include <array>
 #include <list>
 #include <sigc++/sigc++.h>
 
@@ -39,7 +40,7 @@ struct Block
 		int color;
 	
 		Block copy();
-		Block *block;
+		Block b;
 };
 
 
@@ -52,10 +53,10 @@ struct Shape
 	int rotation, types;
 	
 	/* Blocks that make up this shape */
-	std::list<Block> blocks = null;
+	std::list<Block> blocks;
 	
 	Shape copy():
-	Shape *s;
+	Shape s;
 };
 
 class Game
@@ -70,8 +71,8 @@ class Game
 		 /* Falling shape */
 		Shape next_shape = nullptr;
 		
-		 /* Falling shape */
-		std:vector<Block> vec_blocks;
+		 /* Placed blocks */
+		std::vector<std::vector<Block*>> blocks;
 		
 		
 		
@@ -80,9 +81,6 @@ class Game
 
 		/* Game score */
 		int score = 0;
-
-		/* Level play started on */
-		int starting_level = 1;
 
 		/* The current level */
 		int level { get { return starting_level + n_lines_destroyed / 10; } }
@@ -118,29 +116,32 @@ class Game
 	
 	/* add your private declarations */
 	private:
+	
+		/* Level play started on */
+		int m_starting_level = 1;
 		
 		/* true if should pick difficult blocks to place */
-		bool pick_difficult_blocks = false;
+		bool m_pick_difficult_blocks = false;
     
 		/* The direction we are moving */
-		int fast_move_direction = 0;
+		int m_fast_move_direction = 0;
 
 		/* Timer to animate moving fast */
-		unsigned int fast_move_timeout = 0;
+		unsigned int m_fast_move_timeout = 0;
 
 		/* true if we are in fast forward mode */
-		bool fast_forward = false;
+		bool m_fast_forward = false;
 
 		/* Timer to animate block drops */
-		unsigned drop_timeout = 0;
+		unsigned m_drop_timeout = 0;
 
 		/* true if the game has started */
-		bool has_started = false;
+		bool m_has_started = false;
 
 		/* true if games is paused */
-		bool _paused = false;
+		bool m_paused = false;
 	
-		int[] distshapecount = { 0, 0, 0, 0, 0, 0, 0 }; //there are 7 different shapes
+		int[] m_distshapecount = { 0, 0, 0, 0, 0, 0, 0 }; //there are 7 different shapes
 		
 		bool try_rotate(int r_step);
 		bool move_direction(int direction);
@@ -156,6 +157,7 @@ class Game
 		void land_shape();
 		bool move_shape(int x_step, int y_step, int r_step);
 		bool rotate_shape(int r_step);
+		
 		
 		
 		
